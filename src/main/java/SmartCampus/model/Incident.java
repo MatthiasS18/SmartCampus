@@ -1,6 +1,5 @@
 package SmartCampus.model;
 
-import org.apache.tomcat.util.http.parser.Priority;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

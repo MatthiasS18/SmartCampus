@@ -24,7 +24,7 @@ public class User {
     private Role role; 
 
     @OneToMany(mappedBy = "user")
-    private Reservation reservation;
+    private List<Reservation> reservation;
 
     @OneToMany(mappedBy = "user")
     private List<Incident> incident;

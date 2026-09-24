@@ -37,5 +37,5 @@ public class Room {
     private List<Equipment> equipment;
 
     @OneToMany(mappedBy = "room")
-    private Incident incident;
+    private List<Incident> incident;
 }
