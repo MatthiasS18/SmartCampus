@@ -3,10 +3,10 @@ package SmartCampus.model;
 import java.util.List;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -31,11 +31,11 @@ public class Room {
     private int capacity;
 
     @OneToMany(mappedBy = "room")
-    private List<Reservation> reservation;
+    private List<Reservation> reservations;
 
     @OneToMany(mappedBy = "room")
     private List<Equipment> equipment;
 
     @OneToMany(mappedBy = "room")
-    private List<Incident> incident;
+    private List<Incident> incidents;
 }
