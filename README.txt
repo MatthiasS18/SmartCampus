@@ -8,3 +8,4 @@ Junit / Mockito - Level: Junior - Most recent: Any time
 REST / OpenAPI - Level: Junior - Most recent: Any time
 SCRUM - Level: Junior - Most recent: Any time
 Spring / Sprintboot / JPA - Level: Junior - Most recent: Any time
+Tailwindcc
