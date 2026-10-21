@@ -6,6 +6,6 @@ IndexedDB/Dexie/Service worker
 Java
 Junit / Mockito
 REST / OpenAPI
-SCRUM - Level
+SCRUM
 Spring / Sprintboot / JPA
 Tailwindcc
