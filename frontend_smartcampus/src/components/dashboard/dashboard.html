@@ -1,0 +1,27 @@
+<navbar-component></navbar-component>
+<sidebar-component></sidebar-component>
+
+<div class="pt-20 pl-64">
+  <main class="p-8">
+    <div>
+      <h1 class="text-3xl text-[#10345B] font-bold">Dashboard</h1>
+      <p class="text-xl text-[#10345B] mt-2">Manage your campus simply and efficiently</p>
+    </div>
+
+    <div id="containerCards" class="flex flex-wrap gap-8 my-8">
+      <card-component title="rooms" [value]="23" color="bg-blue-300"></card-component>
+      <card-component title="reservations" [value]="12" color="bg-green-300"></card-component>
+      <card-component title="incidents" [value]="3" color="bg-red-300"></card-component>
+      <card-component title="equipments" [value]="48" color="bg-purple-300"></card-component>
+    </div>
+
+    <div id="containerTables" class="grid grid-cols-1 xl:grid-cols-2 gap-6">
+      <table-component
+        title="Réservations à venir"
+        [headers]="reservationHeaders"
+      ></table-component>
+
+      <table-component title="Incidents" [headers]="incidentsHeaders"></table-component>
+    </div>
+  </main>
+</div>
