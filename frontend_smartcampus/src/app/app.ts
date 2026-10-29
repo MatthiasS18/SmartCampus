@@ -6,9 +6,17 @@ import { NavbarComponent } from '../components/navbar/navbar';
 import { DashboardPage } from '../components/dashboard/dashboard';
 import { TableComponent } from '../components/table/table';
 import { RoomPage } from '../components/room/room';
+import { detailRoomPage } from '../components/detailRoom/detailRoom';
 
 @Component({
-  imports: [ConnexionComponent, SidebarComponent, NavbarComponent, DashboardPage, RoomPage],
+  imports: [
+    ConnexionComponent,
+    SidebarComponent,
+    NavbarComponent,
+    DashboardPage,
+    RoomPage,
+    detailRoomPage,
+  ],
   selector: 'app-root',
   // styleUrl: './app.css',
   templateUrl: './app.html',

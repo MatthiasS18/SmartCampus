@@ -13,5 +13,5 @@ import { ButtonComponent } from '../button/button';
   
 })
 export class RoomPage {
-    reservationHeaders = ['Salle', 'Horaire', 'Date', 'Statut'];
+    reservationHeaders = ['Salle', 'Horaire', 'Date', 'Statut', 'Actions'];
 }
