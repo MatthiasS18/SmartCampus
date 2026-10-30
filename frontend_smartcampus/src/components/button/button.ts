@@ -5,4 +5,6 @@ import { Component, input } from '@angular/core';
   standalone: true,
   templateUrl: './button.html',
 })
-export class ButtonComponent {}
+export class ButtonComponent {
+  title = input.required<string>();
+}

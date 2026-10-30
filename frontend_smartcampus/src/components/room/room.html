@@ -8,14 +8,12 @@
         <h1 class="text-3xl text-[#10345B] font-bold">Rooms</h1>
         <p class="text-xl text-[#10345B] mt-2">Manage your campus simply and efficiently</p>
       </div>
-      <button-component></button-component>
+      <button-component title="+ Réserver"></button-component>
     </div>
     <searchFilter-component></searchFilter-component>
 
     <div id="containerTables" class="grid mr-20">
-      <table-component
-        [headers]="reservationHeaders"
-      ></table-component>
+      <table-component [headers]="reservationHeaders"></table-component>
     </div>
   </main>
 </div>
