@@ -9,4 +9,4 @@ import { ButtonComponent } from '../button/button';
   templateUrl: './detailRoom.html',
   imports: [NavbarComponent, SidebarComponent, ButtonComponent],
 })
-export class detailRoomPage {}
+export class DetailRoomPage {}

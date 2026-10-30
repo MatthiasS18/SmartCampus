@@ -6,7 +6,8 @@ import { NavbarComponent } from '../components/navbar/navbar';
 import { DashboardPage } from '../components/dashboard/dashboard';
 import { TableComponent } from '../components/table/table';
 import { RoomPage } from '../components/room/room';
-import { detailRoomPage } from '../components/detailRoom/detailRoom';
+import { DetailRoomPage } from '../components/detailRoom/detailRoom';
+import { ReservationPage } from '../components/reservation/reservation';
 
 @Component({
   imports: [
@@ -15,7 +16,8 @@ import { detailRoomPage } from '../components/detailRoom/detailRoom';
     NavbarComponent,
     DashboardPage,
     RoomPage,
-    detailRoomPage,
+    DetailRoomPage,
+    ReservationPage,
   ],
   selector: 'app-root',
   // styleUrl: './app.css',

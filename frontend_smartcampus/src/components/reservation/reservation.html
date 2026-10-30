@@ -1,0 +1,26 @@
+<navbar-component></navbar-component>
+<sidebar-component></sidebar-component>
+
+<div class="pt-20 pl-64">
+  <main class="p-8 flex flex-col gap-5">
+    <div class="flex justify-between">
+      <div>
+        <h1 class="text-3xl text-[#10345B] font-bold">Rooms</h1>
+        <p class="text-xl text-[#10345B] mt-2">Manage your campus simply and efficiently</p>
+      </div>
+      <button-component title="+ Nouvelle réservation"></button-component>
+    </div>
+
+    <div id="reservation" class="p-3 border rounded-lg flex gap-10">
+      <a href="" class="text-blue-600 hover:text-blue-800"> Mes réservations </a>
+      <div>|</div>
+      <a href="" class="text-blue-600 hover:text-blue-800">Toutes les réservations</a>
+    </div>
+    <div id="table" class="">
+      <table-component
+        title="Consultez et gérez les réservations de salles."
+        [headers]="reservationHeaders"
+      ></table-component>
+    </div>
+  </main>
+</div>
