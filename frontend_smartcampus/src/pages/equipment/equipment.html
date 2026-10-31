@@ -1,0 +1,25 @@
+<navbar-component></navbar-component>
+<sidebar-component></sidebar-component>
+
+<div class="pt-20 pl-64">
+  <main class="p-8 flex flex-col gap-5">
+    <div class="flex justify-between">
+      <div>
+        <h1 class="text-3xl text-[#10345B] font-bold">Equipments</h1>
+        <p class="text-xl text-[#10345B] mt-2">Manage your campus simply and efficiently</p>
+      </div>
+      <button-component title="+ Ajouter un équipement"></button-component>
+    </div>
+
+    <div id="reservation" class="p-3 border rounded-lg flex gap-10">
+      <div class="cursor-pointer">Bâtiment : Tous</div>
+      <div>|</div>
+      <div class="cursor-pointer">Etat : Tous</div>
+      <div>|</div>
+      <div class="cursor-pointer">Rechercher un incident</div>
+    </div>
+    <div id="table" class="">
+      <table-component [headers]="equipmentHeaders"></table-component>
+    </div>
+  </main>
+</div>
