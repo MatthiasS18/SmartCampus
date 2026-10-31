@@ -9,6 +9,7 @@ import { DetailRoomPage } from '../pages/detailRoom/detailRoom';
 import { ReservationPage } from '../pages/reservation/reservation';
 import { NewReservationPage } from '../pages/new_reservation/newReservation';
 import { IncidentPage } from '../pages/incident/incident';
+import { NewIncidentPage } from '../pages/new_incident/newIncident';
 
 @Component({
   imports: [
@@ -20,7 +21,8 @@ import { IncidentPage } from '../pages/incident/incident';
     DetailRoomPage,
     ReservationPage,
     NewReservationPage,
-    IncidentPage
+    IncidentPage,
+    NewIncidentPage
   ],
   selector: 'app-root',
   // styleUrl: './app.css',
