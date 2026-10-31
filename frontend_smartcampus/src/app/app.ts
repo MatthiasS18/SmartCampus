@@ -11,6 +11,7 @@ import { NewReservationPage } from '../pages/new_reservation/newReservation';
 import { IncidentPage } from '../pages/incident/incident';
 import { NewIncidentPage } from '../pages/new_incident/newIncident';
 import { EquipmentPage } from '../pages/equipment/equipment';
+import { NewEquipmentPage } from '../pages/new_equipment/newEquipment';
 
 @Component({
   imports: [
@@ -24,7 +25,8 @@ import { EquipmentPage } from '../pages/equipment/equipment';
     NewReservationPage,
     IncidentPage,
     NewIncidentPage,
-    EquipmentPage
+    EquipmentPage,
+    NewEquipmentPage
   ],
   selector: 'app-root',
   // styleUrl: './app.css',
