@@ -12,6 +12,7 @@ import { IncidentPage } from '../pages/incident/incident';
 import { NewIncidentPage } from '../pages/new_incident/newIncident';
 import { EquipmentPage } from '../pages/equipment/equipment';
 import { NewEquipmentPage } from '../pages/new_equipment/newEquipment';
+import { NotFoundPage } from '../pages/not-found/not-found';
 
 @Component({
   imports: [
@@ -26,10 +27,13 @@ import { NewEquipmentPage } from '../pages/new_equipment/newEquipment';
     IncidentPage,
     NewIncidentPage,
     EquipmentPage,
-    NewEquipmentPage
+    NewEquipmentPage,
+    NotFoundPage,
+    RouterOutlet,
   ],
   selector: 'app-root',
   // styleUrl: './app.css',
+  standalone: true,
   templateUrl: './app.html',
 })
 export class App {
