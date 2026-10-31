@@ -8,6 +8,7 @@ import { RoomPage } from '../pages/room/room';
 import { DetailRoomPage } from '../pages/detailRoom/detailRoom';
 import { ReservationPage } from '../pages/reservation/reservation';
 import { NewReservationPage } from '../pages/new_reservation/newReservation';
+import { IncidentPage } from '../pages/incident/incident';
 
 @Component({
   imports: [
@@ -19,6 +20,7 @@ import { NewReservationPage } from '../pages/new_reservation/newReservation';
     DetailRoomPage,
     ReservationPage,
     NewReservationPage,
+    IncidentPage
   ],
   selector: 'app-root',
   // styleUrl: './app.css',
