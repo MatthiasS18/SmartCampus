@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../navbar/navbar';
-import { SidebarComponent } from '../sidebar/sidebar';
-import { ButtonComponent } from '../button/button';
+import { NavbarComponent } from '../../components/navbar/navbar';
+import { SidebarComponent } from '../../components/sidebar/sidebar';
+import { ButtonComponent } from '../../components/button/button';
 
 @Component({
   selector: 'detailRoom-page',

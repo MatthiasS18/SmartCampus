@@ -1,6 +1,7 @@
 <button
   type="button"
-  class="rounded-lg bg-blue-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+  [ngClass]="[colorBackground(), colorText()]"
+  class="rounded-lg px-6 py-3.5 text-base font-semibold shadow-sm focus:outline-none focus:ring-4"
 >
   {{ title() }}
 </button>

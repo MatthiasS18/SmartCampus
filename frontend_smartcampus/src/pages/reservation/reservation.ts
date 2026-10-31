@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { SidebarComponent } from '../sidebar/sidebar';
-import { NavbarComponent } from '../navbar/navbar';
-import { ButtonComponent } from '../button/button';
-import { TableComponent } from '../table/table';
+import { SidebarComponent } from '../../components/sidebar/sidebar';
+import { NavbarComponent } from '../../components/navbar/navbar';
+import { ButtonComponent } from '../../components/button/button';
+import { TableComponent } from '../../components/table/table';
 
 @Component({
   selector: 'reservation-page',

@@ -1,23 +1,24 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ConnexionComponent } from '../components/connexion/connexion';
+import { ConnexionPage } from '../pages/connexion/connexion';
 import { SidebarComponent } from '../components/sidebar/sidebar';
 import { NavbarComponent } from '../components/navbar/navbar';
-import { DashboardPage } from '../components/dashboard/dashboard';
-import { TableComponent } from '../components/table/table';
-import { RoomPage } from '../components/room/room';
-import { DetailRoomPage } from '../components/detailRoom/detailRoom';
-import { ReservationPage } from '../components/reservation/reservation';
+import { DashboardPage } from '../pages/dashboard/dashboard';
+import { RoomPage } from '../pages/room/room';
+import { DetailRoomPage } from '../pages/detailRoom/detailRoom';
+import { ReservationPage } from '../pages/reservation/reservation';
+import { NewReservationPage } from '../pages/new_reservation/newReservation';
 
 @Component({
   imports: [
-    ConnexionComponent,
+    ConnexionPage,
     SidebarComponent,
     NavbarComponent,
     DashboardPage,
     RoomPage,
     DetailRoomPage,
     ReservationPage,
+    NewReservationPage,
   ],
   selector: 'app-root',
   // styleUrl: './app.css',

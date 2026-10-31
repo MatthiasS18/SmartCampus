@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { CardComponent } from '../card/card';
-import { TableComponent } from '../table/table';
-import { NavbarComponent } from '../navbar/navbar';
-import { SidebarComponent } from '../sidebar/sidebar';
+import { CardComponent } from '../../components/card/card';
+import { TableComponent } from '../../components/table/table';
+import { NavbarComponent } from '../../components/navbar/navbar';
+import { SidebarComponent } from '../../components/sidebar/sidebar';
 
 @Component({
   selector: 'dashboard-page',
