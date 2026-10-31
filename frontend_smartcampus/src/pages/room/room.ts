@@ -9,9 +9,14 @@ import { ButtonComponent } from '../../components/button/button';
   selector: 'room-page',
   standalone: true,
   templateUrl: './room.html',
-    imports: [TableComponent, NavbarComponent, SidebarComponent, searchFilterComponent, ButtonComponent],
-  
+  imports: [
+    TableComponent,
+    NavbarComponent,
+    SidebarComponent,
+    searchFilterComponent,
+    ButtonComponent,
+  ],
 })
 export class RoomPage {
-    reservationHeaders = ['Salle', 'Horaire', 'Date', 'Statut', 'Actions'];
+  reservationHeaders = ['Salle', 'Horaire', 'Date', 'Statut', 'Actions'];
 }
