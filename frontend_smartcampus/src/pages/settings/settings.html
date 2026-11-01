@@ -1,215 +1,211 @@
-<div class="min-h-screen bg-[#F3F7FC] p-6 lg:p-8">
+<sidebar-component></sidebar-component>
+<navbar-component></navbar-component>
 
+<div
+  class="ml-64 min-h-screen bg-[#F3F7FC] px-6 pb-10 pt-24 transition-colors duration-200 dark:bg-gray-900 lg:px-10"
+>
+  <div class="mx-auto max-w-6xl">
     <!-- Page Header -->
     <div class="mb-8">
-      <h1 class="text-2xl font-bold text-[#10345B]">
-        Settings
-      </h1>
-      <p class="text-gray-500 mt-1">
+      <h1 class="text-2xl font-bold text-[#10345B] dark:text-white">Settings</h1>
+
+      <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
         Manage your account and application preferences.
       </p>
     </div>
-  
-    <div class="max-w-5xl space-y-6">
-  
+
+    <div class="space-y-6">
       <!-- Profile Section -->
-      <section class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-  
+      <section
+        class="rounded-xl border border-gray-100 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+      >
         <div class="mb-6">
-          <h2 class="text-lg font-semibold text-[#10345B]">
-            Profile
-          </h2>
-          <p class="text-sm text-gray-500 mt-1">
+          <h2 class="text-lg font-semibold text-[#10345B] dark:text-white">Profile</h2>
+
+          <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
             Manage your personal information.
           </p>
         </div>
-  
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-  
+
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-2">
+            <label class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
               Full name
             </label>
+
             <input
               type="text"
               placeholder="Enter your full name"
-              class="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none focus:border-[#10345B] focus:ring-2 focus:ring-[#10345B]/10"
+              class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 outline-none placeholder-gray-400 focus:border-[#10345B] focus:ring-2 focus:ring-[#10345B]/10 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
           </div>
-  
+
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-2">
+            <label class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
               Email address
             </label>
+
             <input
               type="email"
               placeholder="Enter your email"
-              class="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none focus:border-[#10345B] focus:ring-2 focus:ring-[#10345B]/10"
+              class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 outline-none placeholder-gray-400 focus:border-[#10345B] focus:ring-2 focus:ring-[#10345B]/10 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
           </div>
-  
+
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-2">
+            <label class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
               Role
             </label>
+
             <input
               type="text"
               value="Administrator"
               disabled
-              class="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-500"
+              class="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400"
             />
           </div>
-  
         </div>
       </section>
-  
-  
+
       <!-- Notifications Section -->
-      <section class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-  
+      <section
+        class="rounded-xl border border-gray-100 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+      >
         <div class="mb-6">
-          <h2 class="text-lg font-semibold text-[#10345B]">
-            Notifications
-          </h2>
-          <p class="text-sm text-gray-500 mt-1">
+          <h2 class="text-lg font-semibold text-[#10345B] dark:text-white">Notifications</h2>
+
+          <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
             Choose which notifications you want to receive.
           </p>
         </div>
-  
+
         <div class="space-y-5">
-  
           <div class="flex items-center justify-between gap-4">
             <div>
-              <p class="text-sm font-medium text-gray-800">
+              <p class="text-sm font-medium text-gray-800 dark:text-gray-200">
                 Reservation updates
               </p>
-              <p class="text-xs text-gray-500 mt-1">
+
+              <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
                 Receive updates about room reservations.
               </p>
             </div>
-  
-            <input type="checkbox" checked
-              class="h-5 w-5 accent-[#10345B] cursor-pointer" />
+
+            <input type="checkbox" checked class="h-5 w-5 cursor-pointer accent-[#10345B]" />
           </div>
-  
-          <div class="border-t border-gray-100"></div>
-  
+
+          <div class="border-t border-gray-100 dark:border-gray-700"></div>
+
           <div class="flex items-center justify-between gap-4">
             <div>
-              <p class="text-sm font-medium text-gray-800">
+              <p class="text-sm font-medium text-gray-800 dark:text-gray-200">
                 Incident notifications
               </p>
-              <p class="text-xs text-gray-500 mt-1">
+
+              <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
                 Get notified when a new incident is reported.
               </p>
             </div>
-  
-            <input type="checkbox" checked
-              class="h-5 w-5 accent-[#10345B] cursor-pointer" />
+
+            <input type="checkbox" checked class="h-5 w-5 cursor-pointer accent-[#10345B]" />
           </div>
-  
-          <div class="border-t border-gray-100"></div>
-  
+
+          <div class="border-t border-gray-100 dark:border-gray-700"></div>
+
           <div class="flex items-center justify-between gap-4">
             <div>
-              <p class="text-sm font-medium text-gray-800">
-                Equipment updates
-              </p>
-              <p class="text-xs text-gray-500 mt-1">
+              <p class="text-sm font-medium text-gray-800 dark:text-gray-200">Equipment updates</p>
+
+              <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
                 Receive updates about equipment availability.
               </p>
             </div>
-  
-            <input type="checkbox"
-              class="h-5 w-5 accent-[#10345B] cursor-pointer" />
+
+            <input type="checkbox" class="h-5 w-5 cursor-pointer accent-[#10345B]" />
           </div>
-  
         </div>
       </section>
-  
-  
+
       <!-- Preferences Section -->
-      <section class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-  
+      <section
+        class="rounded-xl border border-gray-100 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+      >
         <div class="mb-6">
-          <h2 class="text-lg font-semibold text-[#10345B]">
-            Preferences
-          </h2>
-          <p class="text-sm text-gray-500 mt-1">
+          <h2 class="text-lg font-semibold text-[#10345B] dark:text-white">Preferences</h2>
+
+          <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
             Customize your application experience.
           </p>
         </div>
-  
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-  
+
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-2">
+            <label class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
               Language
             </label>
+
             <select
-              class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm outline-none focus:border-[#10345B]">
+              class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 outline-none focus:border-[#10345B] dark:border-gray-600 dark:bg-gray-700 dark:text-white"
+            >
               <option>English</option>
               <option>Français</option>
             </select>
           </div>
-  
+
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-2">
+            <label class="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
               Appearance
             </label>
+
             <select
-              class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm outline-none focus:border-[#10345B]">
-              <option>Light mode</option>
-              <option>Dark mode</option>
+              [value]="themeService.theme()"
+              (change)="changeTheme($event)"
+              class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 outline-none focus:border-[#10345B] dark:border-gray-600 dark:bg-gray-700 dark:text-white"
+            >
+              <option value="light">Light mode</option>
+              <option value="dark">Dark mode</option>
             </select>
           </div>
-  
         </div>
       </section>
-  
-  
+
       <!-- Security Section -->
-      <section class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-  
+      <section
+        class="rounded-xl border border-gray-100 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+      >
         <div class="mb-6">
-          <h2 class="text-lg font-semibold text-[#10345B]">
-            Security
-          </h2>
-          <p class="text-sm text-gray-500 mt-1">
-            Manage your account security.
-          </p>
+          <h2 class="text-lg font-semibold text-[#10345B] dark:text-white">Security</h2>
+
+          <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Manage your account security.</p>
         </div>
-  
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-  
+
+        <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
           <div>
-            <p class="text-sm font-medium text-gray-800">
-              Password
-            </p>
-            <p class="text-xs text-gray-500 mt-1">
+            <p class="text-sm font-medium text-gray-800 dark:text-gray-200">Password</p>
+
+            <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
               Keep your account secure with a strong password.
             </p>
           </div>
-  
+
           <button
             type="button"
-            class="px-5 py-2.5 rounded-lg border border-[#10345B] text-[#10345B] text-sm font-medium hover:bg-[#10345B] hover:text-white transition">
+            class="rounded-lg border border-[#10345B] px-5 py-2.5 text-sm font-medium text-[#10345B] transition hover:bg-[#10345B] hover:text-white dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-500 dark:hover:text-white"
+          >
             Change password
           </button>
-  
         </div>
-  
       </section>
-  
-  
+
       <!-- Save Button -->
       <div class="flex justify-end pb-6">
         <button
           type="button"
-          class="px-6 py-3 rounded-lg bg-[#10345B] text-white text-sm font-semibold hover:bg-[#174675] transition shadow-sm">
+          class="rounded-lg bg-[#10345B] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#174675]"
+        >
           Save changes
         </button>
       </div>
-  
     </div>
   </div>
+</div>

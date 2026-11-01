@@ -1,9 +1,11 @@
 <div class="w-full max-w-3xl my-6">
-  <div class="flex gap-3 rounded-2xl border border-gray-200 bg-white p-2 shadow-sm">
+  <div
+    class="flex gap-3 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-2 shadow-sm transition-colors duration-200"
+  >
     <!-- Recherche -->
     <div class="flex flex-1 items-center gap-3 px-3 min-w-0">
       <svg
-        class="w-5 h-5 shrink-0 text-gray-400"
+        class="w-5 h-5 shrink-0 text-gray-400 dark:text-gray-500"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -16,12 +18,12 @@
       <input
         type="search"
         placeholder="Rechercher une salle..."
-        class="w-full min-w-0 border-0 bg-transparent text-sm text-gray-700 placeholder:text-gray-400 focus:outline-none focus:ring-0"
+        class="w-full min-w-0 border-0 bg-transparent text-sm text-gray-700 dark:text-gray-200 placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:outline-none focus:ring-0"
       />
     </div>
 
     <!-- Séparateur -->
-    <div class="hidden sm:block h-8 w-px bg-gray-200"></div>
+    <div class="hidden sm:block h-8 w-px bg-gray-200 dark:bg-gray-700"></div>
 
     <!-- Catégories à droite -->
     <div class="relative shrink-0">
@@ -46,21 +48,23 @@
 
       @if (isDropdownOpen) {
         <div
-          class="absolute right-0 top-full z-50 mt-2 w-48 overflow-hidden rounded-xl border border-gray-200 bg-white p-1 shadow-lg"
+          class="absolute right-0 top-full z-50 mt-2 w-48 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-1 shadow-lg"
         >
           @for (category of categories; track category) {
             <button
               type="button"
               (click)="selectCategory(category)"
-              class="flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-left text-sm transition hover:bg-blue-50"
+              class="flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-left text-sm text-gray-700 dark:text-gray-200 transition hover:bg-blue-50 dark:hover:bg-gray-700"
               [class.bg-blue-50]="selectedCategory === category"
+              [class.dark:bg-gray-700]="selectedCategory === category"
               [class.font-semibold]="selectedCategory === category"
               [class.text-[#10345B]]="selectedCategory === category"
+              [class.dark:text-blue-400]="selectedCategory === category"
             >
               {{ category }}
 
               @if (selectedCategory === category) {
-                <span class="text-[#10345B]">✓</span>
+                <span class="text-[#10345B] dark:text-blue-400">✓</span>
               }
             </button>
           }

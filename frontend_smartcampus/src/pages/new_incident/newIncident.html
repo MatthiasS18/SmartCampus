@@ -1,18 +1,22 @@
 <navbar-component></navbar-component>
 <sidebar-component></sidebar-component>
 
-<div class="pt-20 pl-64">
+<div class="pt-20 pl-64 min-h-screen bg-[#F3F7FC] dark:bg-gray-900 transition-colors duration-200">
   <main class="p-8 flex flex-col gap-5">
     <div class="flex justify-between">
       <div>
-        <h1 class="text-3xl text-[#10345B] font-bold">Report an incident</h1>
-        <p class="text-xl text-[#10345B] mt-2">Manage your campus simply and efficiently</p>
+        <h1 class="text-3xl text-[#10345B] dark:text-white font-bold">Report an incident</h1>
+        <p class="text-xl text-[#10345B] dark:text-gray-300 mt-2">
+          Manage your campus simply and efficiently
+        </p>
       </div>
     </div>
+
     <div id="form" class="">
       <form-component title="Détails de l'incident" [fields]="formFields"></form-component>
     </div>
   </main>
+
   <div class="flex justify-end gap-5 m-5">
     <button-component title="Signaler l'incident"></button-component>
   </div>

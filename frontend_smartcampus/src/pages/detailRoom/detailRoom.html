@@ -1,51 +1,65 @@
 <navbar-component></navbar-component>
 <sidebar-component></sidebar-component>
 
-<div class="pt-20 pl-64">
+<div class="pt-20 pl-64 min-h-screen bg-[#F3F7FC] dark:bg-gray-900 transition-colors duration-200">
   <main class="p-8">
     <div class="flex justify-between">
       <div>
-        <h1 class="text-3xl text-[#10345B] font-bold">Rooms</h1>
-        <p class="text-xl text-[#10345B] mt-2">Manage your campus simply and efficiently</p>
+        <h1 class="text-3xl text-[#10345B] dark:text-white font-bold">Rooms</h1>
+        <p class="text-xl text-[#10345B] dark:text-gray-300 mt-2">
+          Manage your campus simply and efficiently
+        </p>
       </div>
     </div>
 
     <div id="containerInformations" class="flex flex-row gap-3 mt-8">
+      <!-- Room Overview -->
       <div
-        class="bg-neutral-primary-soft flex-1 block p-6 border border-default rounded-lg shadow-xs hover:bg-neutral-secondary-medium"
+        class="bg-white dark:bg-gray-800 flex-1 block p-6 border border-gray-200 dark:border-gray-700 rounded-lg shadow-xs transition-colors"
       >
-        <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">
+        <h5
+          class="mb-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white leading-8"
+        >
           Aperçu de la salle
         </h5>
-        <div class="text-body">
+
+        <div class="text-gray-700 dark:text-gray-300">
           <div
-            class="bg-neutral-primary-soft bg-blue-300 block min-h-40 p-6 border border-default rounded-lg shadow-xs hover:bg-neutral-secondary-medium"
+            class="bg-blue-300 dark:bg-blue-900/50 block min-h-40 p-6 border border-gray-200 dark:border-gray-700 rounded-lg shadow-xs"
           >
             Illustrations de la salle
           </div>
         </div>
-        Batiment B - 2e étage
+
+        <p class="mt-3 text-gray-700 dark:text-gray-300">Batiment B - 2e étage</p>
       </div>
 
+      <!-- Room Information -->
       <div
-        class="bg-neutral-primary-soft flex-1 block p-6 border border-default rounded-lg shadow-xs hover:bg-neutral-secondary-medium"
+        class="bg-white dark:bg-gray-800 flex-1 block p-6 border border-gray-200 dark:border-gray-700 rounded-lg shadow-xs transition-colors"
       >
-        <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">
+        <h5
+          class="mb-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white leading-8"
+        >
           Informations
         </h5>
-        <div class="text-body">
+
+        <div class="text-gray-700 dark:text-gray-300 space-y-4">
           <div id="capacity">
-            <h1>Capacité</h1>
+            <h1 class="font-semibold text-gray-900 dark:text-white">Capacité</h1>
             <h1>40 personnes</h1>
           </div>
+
           <div id="equipments">
-            <h1>Equipements</h1>
+            <h1 class="font-semibold text-gray-900 dark:text-white">Equipements</h1>
             <h1>Projecteur - Tableau - Wi-fi</h1>
           </div>
+
           <div id="disponibility" class="flex flex-col items-start gap-1">
-            <h1>Disponibilité</h1>
+            <h1 class="font-semibold text-gray-900 dark:text-white">Disponibilité</h1>
+
             <div
-              class="flex justify-center text-black font-bold bg-green-300 box-border border border-transparent rounded-2xl text-sm px-4 py-2.5"
+              class="flex justify-center text-black font-bold bg-green-300 dark:bg-green-800 dark:text-green-100 box-border border border-transparent rounded-2xl text-sm px-4 py-2.5"
             >
               Disponible
             </div>
@@ -54,19 +68,26 @@
       </div>
     </div>
 
+    <!-- Description -->
     <div
-      class="bg-neutral-primary-soft block mt-10 p-6 border border-default rounded-lg shadow-xs hover:bg-neutral-secondary-medium"
+      class="bg-white dark:bg-gray-800 block mt-10 p-6 border border-gray-200 dark:border-gray-700 rounded-lg shadow-xs transition-colors"
     >
-      <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">
+      <h5
+        class="mb-3 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white leading-8"
+      >
         Descriptions
       </h5>
-      <div class="text-body">
+
+      <div class="text-gray-700 dark:text-gray-300">
         <div id="description">
           Grande salle de cours equipee d'un projecteur et d'un tableau blanc.
         </div>
 
-        <div id="pertinence">Ideale pour les cours magistraux, reunions et presentations.</div>
-        <div class="flex justify-end">
+        <div id="pertinence" class="mt-2">
+          Ideale pour les cours magistraux, reunions et presentations.
+        </div>
+
+        <div class="flex justify-end mt-4">
           <button-component title="Reserver cette salle"></button-component>
         </div>
       </div>

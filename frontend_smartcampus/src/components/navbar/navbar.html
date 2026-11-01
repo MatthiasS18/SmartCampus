@@ -1,6 +1,8 @@
-<nav class="fixed w-full h-20 z-20 top-0 start-0 border-b border-default bg-white">
+<nav
+  class="fixed w-full h-20 z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 transition-colors duration-200"
+>
   <div class="h-full flex items-center px-6">
-    <span class="text-3xl ml-10 text-[#10345B] font-bold whitespace-nowrap">
+    <span class="text-3xl ml-10 text-[#10345B] dark:text-white font-bold whitespace-nowrap">
       &#x2B2A; SmartCampus
     </span>
 
@@ -8,7 +10,7 @@
       <div class="relative w-auto max-w-md">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
           <svg
-            class="w-4 h-4 text-gray-400"
+            class="w-4 h-4 text-gray-400 dark:text-gray-500"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -26,11 +28,13 @@
         <input
           type="text"
           placeholder="Search..."
-          class="block ps-9 pe-3 py-2.5 bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500"
+          class="block ps-9 pe-3 py-2.5 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500"
         />
       </div>
     </div>
 
-    <div class="text-[#10345B] font-bold text-xl whitespace-nowrap mr-20">[Prénom]</div>
+    <div class="text-[#10345B] dark:text-white font-bold text-xl whitespace-nowrap mr-20">
+      [Prénom]
+    </div>
   </div>
 </nav>

@@ -1,54 +1,66 @@
-<nav class="fixed top-20 start-0 w-16 md:w-20 lg:w-64 h-[calc(100vh-5rem)] z-20 bg-[#10345B]">
+<nav
+  class="fixed top-20 start-0 w-16 md:w-20 lg:w-64 h-[calc(100vh-5rem)] z-20 bg-[#10345B] transition-colors duration-200"
+>
   <div class="h-full px-2 lg:px-3 py-4 overflow-y-auto flex flex-col">
     <ul class="font-medium flex flex-col gap-2 mt-4">
-
       <li>
-        <a routerLink="/"
-           routerLinkActive="bg-white/20"
-           [routerLinkActiveOptions]="{ exact: true }"
-           class="block py-3 px-2 lg:px-3 text-white rounded-lg hover:bg-white/10 text-xs md:text-sm lg:text-base">
+        <a
+          routerLink="/"
+          routerLinkActive="bg-white/20"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="block py-3 px-2 lg:px-3 text-white rounded-lg hover:bg-white/10 text-xs md:text-sm lg:text-base"
+        >
           Dashboard
         </a>
       </li>
 
       <li>
-        <a routerLink="/room"
-           routerLinkActive="bg-white/20"
-           class="block py-3 px-2 lg:px-3 text-white rounded-lg hover:bg-white/10 text-xs md:text-sm lg:text-base">
+        <a
+          routerLink="/room"
+          routerLinkActive="bg-white/20"
+          class="block py-3 px-2 lg:px-3 text-white rounded-lg hover:bg-white/10 text-xs md:text-sm lg:text-base"
+        >
           Rooms
         </a>
       </li>
 
       <li>
-        <a routerLink="/reservation"
-           routerLinkActive="bg-white/20"
-           class="block py-3 px-2 lg:px-3 text-white rounded-lg hover:bg-white/10 text-xs md:text-sm lg:text-base">
+        <a
+          routerLink="/reservation"
+          routerLinkActive="bg-white/20"
+          class="block py-3 px-2 lg:px-3 text-white rounded-lg hover:bg-white/10 text-xs md:text-sm lg:text-base"
+        >
           Reservations
         </a>
       </li>
 
       <li>
-        <a routerLink="/incident"
-           routerLinkActive="bg-white/20"
-           class="block py-3 px-2 lg:px-3 text-white rounded-lg hover:bg-white/10 text-xs md:text-sm lg:text-base">
+        <a
+          routerLink="/incident"
+          routerLinkActive="bg-white/20"
+          class="block py-3 px-2 lg:px-3 text-white rounded-lg hover:bg-white/10 text-xs md:text-sm lg:text-base"
+        >
           Incidents
         </a>
       </li>
 
       <li>
-        <a routerLink="/equipment"
-           routerLinkActive="bg-white/20"
-           class="block py-3 px-2 lg:px-3 text-white rounded-lg hover:bg-white/10 text-xs md:text-sm lg:text-base">
+        <a
+          routerLink="/equipment"
+          routerLinkActive="bg-white/20"
+          class="block py-3 px-2 lg:px-3 text-white rounded-lg hover:bg-white/10 text-xs md:text-sm lg:text-base"
+        >
           Equipments
         </a>
       </li>
-
     </ul>
 
     <div class="mt-auto">
-      <a routerLink="/settings"
-         routerLinkActive="bg-white/20"
-         class="block py-3 px-2 lg:px-3 text-white rounded-lg hover:bg-white/10 text-xs md:text-sm lg:text-base">
+      <a
+        routerLink="/settings"
+        routerLinkActive="bg-white/20"
+        class="block py-3 px-2 lg:px-3 text-white rounded-lg hover:bg-white/10 text-xs md:text-sm lg:text-base"
+      >
         Settings
       </a>
     </div>

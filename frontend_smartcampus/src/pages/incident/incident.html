@@ -1,24 +1,41 @@
 <navbar-component></navbar-component>
 <sidebar-component></sidebar-component>
 
-<div class="pt-20 pl-64">
+<div class="pt-20 pl-64 min-h-screen bg-[#F3F7FC] dark:bg-gray-900 transition-colors duration-200">
   <main class="p-8 flex flex-col gap-5">
+    <!-- Page Header -->
     <div class="flex justify-between">
       <div>
-        <h1 class="text-3xl text-[#10345B] font-bold">Incidents</h1>
-        <p class="text-xl text-[#10345B] mt-2">Manage your campus simply and efficiently</p>
+        <h1 class="text-3xl text-[#10345B] dark:text-white font-bold">Incidents</h1>
+
+        <p class="text-xl text-[#10345B] dark:text-gray-300 mt-2">
+          Manage your campus simply and efficiently
+        </p>
       </div>
+
       <button-component title="+ Signaler un incident"></button-component>
     </div>
 
-    <div id="reservation" class="p-3 border rounded-lg flex gap-10">
-      <div class="cursor-pointer">Statut : Tous</div>
-      <div>|</div>
-      <div class="cursor-pointer">Priorité : Toutes</div>
-      <div>|</div>
-      <div class="cursor-pointer">Rechercher un incident</div>
+    <!-- Filters -->
+    <div
+      id="reservation"
+      class="p-3 border border-gray-200 dark:border-gray-700 rounded-lg flex gap-10 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 transition-colors"
+    >
+      <div class="cursor-pointer hover:text-[#10345B] dark:hover:text-white">Statut : Tous</div>
+
+      <div class="text-gray-300 dark:text-gray-600">|</div>
+
+      <div class="cursor-pointer hover:text-[#10345B] dark:hover:text-white">Priorité : Toutes</div>
+
+      <div class="text-gray-300 dark:text-gray-600">|</div>
+
+      <div class="cursor-pointer hover:text-[#10345B] dark:hover:text-white">
+        Rechercher un incident
+      </div>
     </div>
-    <div id="table" class="">
+
+    <!-- Incidents Table -->
+    <div id="table">
       <table-component [headers]="incidentHeaders"></table-component>
     </div>
   </main>

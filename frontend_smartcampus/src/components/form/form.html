@@ -1,29 +1,23 @@
-<div class="bg-white p-6 rounded-xl border border-gray-300 shadow-sm">
+<div
+  class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-300 dark:border-gray-700 shadow-sm transition-colors duration-200"
+>
+  <h2 class="text-2xl font-bold text-[#10345B] dark:text-white mb-6">
+    {{ title() }}
+  </h2>
 
-    <h2 class="text-2xl font-bold text-[#10345B] mb-6">
-      {{ title() }}
-    </h2>
-  
-    <div class="grid grid-cols-2 gap-4">
-  
-      @for (field of fields(); track field.label) {
-        <div
-          class="flex flex-col gap-2"
-          [class.col-span-2]="field.colSpan === 2"
-        >
-  
-          <label class="font-bold text-gray-700">
-            {{ field.label }}
-          </label>
-  
-          <input
-            [type]="field.type"
-            [placeholder]="field.placeholder || ''"
-            class="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-300 focus:border-blue-500 outline-none"
-          />
-  
-        </div>
-      }
-  
-    </div>
+  <div class="grid grid-cols-2 gap-4">
+    @for (field of fields(); track field.label) {
+      <div class="flex flex-col gap-2" [class.col-span-2]="field.colSpan === 2">
+        <label class="font-bold text-gray-700 dark:text-gray-300">
+          {{ field.label }}
+        </label>
+
+        <input
+          [type]="field.type"
+          [placeholder]="field.placeholder || ''"
+          class="bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-400 border border-gray-300 dark:border-gray-600 rounded-lg p-3 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-500 focus:border-blue-500 outline-none"
+        />
+      </div>
+    }
   </div>
+</div>

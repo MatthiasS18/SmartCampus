@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ConnexionPage } from '../pages/connexion/connexion';
 import { SidebarComponent } from '../components/sidebar/sidebar';
@@ -13,6 +13,7 @@ import { NewIncidentPage } from '../pages/new_incident/newIncident';
 import { EquipmentPage } from '../pages/equipment/equipment';
 import { NewEquipmentPage } from '../pages/new_equipment/newEquipment';
 import { NotFoundPage } from '../pages/not-found/not-found';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   imports: [
@@ -38,4 +39,5 @@ import { NotFoundPage } from '../pages/not-found/not-found';
 })
 export class App {
   protected readonly title = signal('smartcampus');
+  private themeService = inject(ThemeService);
 }
