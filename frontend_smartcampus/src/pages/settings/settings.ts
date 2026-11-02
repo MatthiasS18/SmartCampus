@@ -1,19 +1,21 @@
 import { Component, inject } from '@angular/core';
-import { Theme, ThemeService } from '../../app/services/theme.service';
+import { ThemeService } from '../../app/services/theme.service';
 import { SidebarComponent } from '../../components/sidebar/sidebar';
 import { NavbarComponent } from '../../components/navbar/navbar';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-settings',
   standalone: true,
-  imports: [SidebarComponent, NavbarComponent],
+  imports: [SidebarComponent, NavbarComponent, NgClass],
   templateUrl: './settings.html',
 })
 export class SettingsPage {
   themeService = inject(ThemeService);
 
-  changeTheme(event: Event) {
-    const theme = (event.target as HTMLSelectElement).value as Theme;
-    this.themeService.setTheme(theme);
+  toggleTheme(): void {
+    const newTheme = this.themeService.theme() === 'dark' ? 'light' : 'dark';
+
+    this.themeService.setTheme(newTheme);
   }
 }

@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { CardComponent } from '../../components/card/card';
 import { TableComponent } from '../../components/table/table';
 import { NavbarComponent } from '../../components/navbar/navbar';
 import { SidebarComponent } from '../../components/sidebar/sidebar';
+import { Config } from '../../app/services/config';
 
 @Component({
   selector: 'dashboard-page',
@@ -13,4 +14,5 @@ import { SidebarComponent } from '../../components/sidebar/sidebar';
 export class DashboardPage {
   reservationHeaders = ['Salle', 'Horaire', 'Date', 'Statut'];
   incidentsHeaders = ['Description', 'Salle', 'Priorité'];
+  private config = Inject(Config);
 }

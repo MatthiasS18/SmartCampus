@@ -157,14 +157,29 @@
               Appearance
             </label>
 
-            <select
-              [value]="themeService.theme()"
-              (change)="changeTheme($event)"
-              class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-900 outline-none focus:border-[#10345B] dark:border-gray-600 dark:bg-gray-700 dark:text-white"
-            >
-              <option value="light">Light mode</option>
-              <option value="dark">Dark mode</option>
-            </select>
+            <div class="flex items-center justify-between gap-4">
+              <div>
+                <p class="text-sm font-medium text-gray-700 dark:text-gray-200">Dark mode</p>
+
+                <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                  Enable or disable dark mode.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                role="switch"
+                [attr.aria-checked]="themeService.theme() === 'dark'"
+                (click)="toggleTheme()"
+                class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#10345B] focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+                [ngClass]="themeService.theme() === 'dark' ? 'bg-[#10345B]' : 'bg-gray-300'"
+              >
+                <span
+                  class="pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow transition-transform duration-200"
+                  [ngClass]="themeService.theme() === 'dark' ? 'translate-x-5' : 'translate-x-0'"
+                ></span>
+              </button>
+            </div>
           </div>
         </div>
       </section>

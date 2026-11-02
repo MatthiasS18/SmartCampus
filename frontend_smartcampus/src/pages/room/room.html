@@ -17,7 +17,8 @@
     <searchFilter-component></searchFilter-component>
 
     <div id="containerTables" class="grid mr-20">
-      <table-component [headers]="reservationHeaders"></table-component>
+      <p class="text-red-500">Nombre de salles : {{ roomsData().length }}</p>
+      <table-component [headers]="roomHeaders" [datas]="roomsData()" />
     </div>
   </main>
 </div>
