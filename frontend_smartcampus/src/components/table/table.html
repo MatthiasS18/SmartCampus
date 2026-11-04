@@ -19,9 +19,9 @@
     </thead>
 
     <tbody>
-      @for (room of datas(); track room.id) {
+      @for (data of datas(); track data.id) {
         <tr>
-          @for (value of getRoomValues(room); track $index) {
+          @for (value of getValues(data); track $index) {
             @if ($index !== 0) {
               <td class="px-6 py-4">{{ value }}</td>
             }

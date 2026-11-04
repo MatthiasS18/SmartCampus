@@ -28,10 +28,10 @@ export class RoomPage implements OnInit {
   ngOnInit(): void {
     this.roomService.getRooms().subscribe({
       next: (rooms) => {
-        this.roomsData.set(rooms);
+        this.roomsData.set(rooms);        
       },
       error: (error) => {
-        console.error('Erreur :', error);
+        console.error('Error :', error);
       },
     });
   }

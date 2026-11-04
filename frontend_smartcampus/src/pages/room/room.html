@@ -17,7 +17,34 @@
     <searchFilter-component></searchFilter-component>
 
     <div id="containerTables" class="grid mr-20">
-      <p class="text-red-500">Nombre de salles : {{ roomsData().length }}</p>
+      <div
+        class="flex items-center gap-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-5 py-4 shadow-sm w-fit my-6"
+      >
+        <div
+          class="flex items-center justify-center w-12 h-12 rounded-lg bg-blue-100 dark:bg-blue-900/40"
+        >
+          <svg
+            class="w-6 h-6 text-[#10345B] dark:text-blue-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"
+            />
+          </svg>
+        </div>
+
+        <div>
+          <p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Total rooms</p>
+          <p class="text-2xl font-bold text-[#10345B] dark:text-white">
+            {{ roomsData().length }}
+          </p>
+        </div>
+      </div>
       <table-component [headers]="roomHeaders" [datas]="roomsData()" />
     </div>
   </main>

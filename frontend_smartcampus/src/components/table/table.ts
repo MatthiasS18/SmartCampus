@@ -1,5 +1,4 @@
 import { Component, input } from '@angular/core';
-import { Room } from '../../app/models/room';
 
 @Component({
   selector: 'table-component',
@@ -9,9 +8,9 @@ import { Room } from '../../app/models/room';
 export class TableComponent {
   title = input<string>();
   headers = input.required<string[]>();
-  datas = input<Room[]>([]);
+  datas = input<any[]>([]);
 
-  getRoomValues(room: Room): (string | number)[] {
-    return Object.values(room);
+  getValues(data: any): any[] {
+    return Object.values(data);
   }
 }
